@@ -1,16 +1,82 @@
-# React + Vite
+# Calculator App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern, responsive calculator built with React, Vite, and Tailwind CSS.
 
-Currently, two official plugins are available:
+## Preview
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+![Calculator Preview](public/output.png)
 
-## React Compiler
+## Features
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- Basic arithmetic operations (addition, subtraction, multiplication, division)
+- Clear and backspace functionality
+- Error handling for invalid expressions
+- Modern dark theme UI
+- Responsive design
+- Smooth user experience
 
-## Expanding the ESLint configuration
+## Tech Stack
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- **React 19** - UI library
+- **Vite** - Build tool and dev server
+- **Tailwind CSS** - Styling
+- **shadcn/ui** - UI components
+- **Lucide React** - Icons
+- **Geist Font** - Typography
+
+## Installation
+
+1. Clone the repository:
+```bash
+git clone <repository-url>
+cd calculator
+```
+
+2. Install dependencies:
+```bash
+npm install
+```
+
+3. Run the development server:
+```bash
+npm run dev
+```
+
+4. Build for production:
+```bash
+npm run build
+```
+
+5. Preview production build:
+```bash
+npm run preview
+```
+
+## Usage
+
+- Click on the number buttons to input numbers
+- Use the operator buttons (+, -, ×, ÷) for calculations
+- Press "=" to calculate the result
+- Press "C" to clear the display
+- Press "⌫" to delete the last character
+
+## Project Structure
+
+```
+calculator/
+├── public/
+│   └── output.png          # Preview image
+├── src/
+│   ├── components/
+│   │   ├── ButtonValue.jsx # Calculator buttons
+│   │   └── Display.jsx     # Display component
+│   ├── App.jsx             # Main app component
+│   ├── index.css           # Global styles
+│   └── main.jsx            # Entry point
+├── package.json
+└── vite.config.js
+```
+
+## License
+
+This project is open source and available under the MIT License.
